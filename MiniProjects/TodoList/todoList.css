@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+.subcontainer {
+  text-align: center;
+}
+
+.inputArea {
+  background-color: bisque;
+  padding: 20px;
+}
+
+.inputArea #inputBox {
+  width: 80%;
+  height: 45px;
+  border: 1px solid #eee;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.inputArea #inputBox:focus {
+  outline: none;
+}
+
+.inputArea #addBtn {
+  width: 50px;
+  height: 45px;
+  border: 1px solid #ffaa2b;
+  font-size: 1.2em;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+.displayArea {
+  padding: 20px;
+}
+
+#todoList {
+  background-color: rgb(155, 190, 255);
+  display: none;
+  list-style: none;
+  text-align: left;
+}
+
+/* 추가한 css ~~~~~~~~~~~~~~~~~~*/
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left-group,
+.right-group {
+  display: flex;
+  align-items: center;
+}
+
+.right-group {
+  gap: 10px;
+}
+/* ~~~~~~~~~~~~~~~~~~~추가한 css */
+
+#todoList span {
+  cursor: pointer;
+}
+
+#todoList .checkBtn {
+  border: 2px solid rgb(243, 80, 80);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 231, 231);
+}
+
+#todoList .deleteBtn {
+  border: none;
+  color: rgb(243, 80, 80);
+  font-weight: bolder;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#todoList .check {
+  text-decoration: line-through;
+  color: #999;
+}
